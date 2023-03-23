@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="theme1">Hunger & Malnutrition</p>
+    <p id="theme2">Cosmetics Europe</p>
+    <p id="sources">Sources</p>
+    <div class="logo">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
+            <circle cx="125" cy="125" r="124.5" style="fill:#3683ad;stroke:#000;stroke-miterlimit:10" />
+            <path
+                d="M125.5 179.5c-56.32 0-96.72-54.65-97.08-55.2-.03-.05-.3-.56.74-2.49 2.85-5.28 14.24-18.24 32.66-30.54C76.6 81.4 99.64 69.64 125.5 69.64c30.74 0 56.21 14.86 68.65 23.71 18.5 13.16 28.35 26.58 28.35 31.22s-9.85 18.06-28.35 31.22c-12.45 8.86-37.92 23.71-68.65 23.71Z"
+                style="fill:#fff" />
+            <path
+                d="M125.5 70.14c30.6 0 55.97 14.8 68.36 23.62 18.12 12.89 28.14 26.4 28.14 30.81s-10.02 17.92-28.14 30.81C181.46 164.2 156.1 179 125.5 179c-27.84 0-51.91-14.03-67.21-25.79-17.09-13.15-27.9-26.85-29.43-29.14-.06-.42.51-2.33 3.85-6.53 6.07-7.64 18.45-19.38 35.01-29.43 13.49-8.19 34.47-17.96 57.78-17.96m0-1c-53.85 0-100.5 50.86-97.5 55.43s43.65 55.43 97.5 55.43 97.5-45 97.5-55.43-43.65-55.43-97.5-55.43Z" />
+            <circle cx="125" cy="125" r="35.5" style="fill:#0009c9; stroke:#000;stroke-miterlimit:10" />
+            <path
+                d="M125 90c19.3 0 35 15.7 35 35s-15.7 35-35 35-35-15.7-35-35 15.7-35 35-35m0-1c-19.88 0-36 16.12-36 36s16.12 36 36 36 36-16.12 36-36-16.12-36-36-36Z" />
+            <path id="iris1" d="M138.5 82.5 125 125l46.5-15.5s-8-27-33-27Z"
+                style="stroke:#000;stroke-miterlimit:10;fill:#7496ff" />
+            <path d="M30.82 93.08c1.3-1.45 105.33-80.95 181.9-3.17-2.54-4.27-76.59-55.9-181.9 3.17Z"
+                style="stroke:#000;stroke-miterlimit:10" />
+            <path id="iris2" d="m165 112.81-39.77 12.86 37.16 27.02s16.23-20.81 2.61-39.88Z"
+                style="fill:#a796ff;stroke:#000;stroke-miterlimit:10" />
+            <path id="iris3" d="m154.16 146.55-29.66-21.02.54 38.47s22.94 1.07 29.12-17.45Z"
+                style="fill:#746aff;stroke:#000;stroke-miterlimit:10" />
+        </svg>
+    </div>
+
+    <div>
+        <button onmouseenter="buttonAnimEnter(this)" onmouseleave="buttonAnimLeave(this)" class="animButton" onclick="play()">Play</button>
+        <button onmouseenter="buttonAnimEnter(this)" onmouseleave="buttonAnimLeave(this)" class="animButton" onclick="stop()">Stop</button>
+    </div>
+
+    <div class="icons">
+
+        <svg onclick="location.href = 'Hunger.html';" onmouseenter="icon1enter()" onmouseleave="icon1leave()" id="baricon" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 250 250" style="enable-background:new 0 0 250 250" xml:space="preserve">
+            <circle cx="124.57" cy="125" r="124.5" style="fill:#29abe2" />
+            <path
+                d="M124.57 1c33.12 0 64.26 12.9 87.68 36.32s36.32 54.56 36.32 87.68-12.9 64.26-36.32 87.68S157.69 249 124.57 249s-64.26-12.9-87.68-36.32S.57 158.12.57 125s12.9-64.26 36.32-87.68S91.45 1 124.57 1m0-1C55.53 0-.43 55.96-.43 125s55.96 125 125 125 125-55.96 125-125-55.96-125-125-125z" />
+            <path id="bar1" style="fill:#39b54a" d="M47 61h32v129H47z" />
+            <path id="bar1s" d="M77 63v125H49V63h28m4-4H45v133h36V59z" />
+            <path id="bar2" style="fill:#93278f" d="M88 97h32v93H88z" />
+            <path id="bar2s" d="M118 99v89H90V99h28m4-4H86v97h36V95z" />
+            <path id="bar3" style="fill:#fbb03b" d="M129 77h32v113h-32z" />
+            <path id="bar3s" d="M159 79v109h-28V79h28m4-4h-36v117h36V75z" />
+            <path id="bar4" style="fill:#d9e021" d="M170.57 117h32v73h-32z" />
+            <path id="bar4s" d="M200.57 119v69h-28v-69h28m4-4h-36v77h36v-77z" />
+        </svg>
+
+        <svg onclick="location.href = 'Cosmetics-Euro.html';" onmouseenter="icon2enter()" onmouseleave="icon2leave()" id="mailicon" version="1.1" id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 250 250"
+            style="enable-background:new 0 0 250 250" xml:space="preserve">
+            <style>
+                .st1 {
+                    fill: #fff
+                }
+            </style>
+            <circle cx="125" cy="125" r="124.5" style="fill:#29abe2" />
+            <path
+                d="M125 1c33.12 0 64.26 12.9 87.68 36.32S249 91.88 249 125s-12.9 64.26-36.32 87.68S158.12 249 125 249s-64.26-12.9-87.68-36.32S1 158.12 1 125s12.9-64.26 36.32-87.68S91.88 1 125 1m0-1C55.96 0 0 55.96 0 125s55.96 125 125 125 125-55.96 125-125S194.04 0 125 0z" />
+            <path class="st1" d="M54.5 81.5h141.72v87H54.5z" />
+            <path d="M195.72 82v86H55V82h140.72m1-1H54v88h142.72V81z" />
+            <path class="st1" d="M56.7 82h137.33l-68.67 59.06z" />
+            <path
+                d="m191.33 83-31.59 27.17-34.38 29.57-34.38-29.57L59.39 83h131.94m5.39-2H54l35.68 30.69 35.68 30.69 35.68-30.69L196.72 81z" />
+        </svg>
+
+        <svg onclick="location.href = 'sources.html';" onmouseenter="icon3enter()" onmouseleave="icon3leave()" id="helpicon" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 250 250" style="enable-background:new 0 0 250 250" xml:space="preserve">
+            <circle cx="125.57" cy="125" r="124.5" style="fill:#29abe2" />
+            <path
+                d="M125.57 1c33.12 0 64.26 12.9 87.68 36.32s36.32 54.56 36.32 87.68-12.9 64.26-36.32 87.68S158.69 249 125.57 249s-64.26-12.9-87.68-36.32S1.57 158.12 1.57 125s12.9-64.26 36.32-87.68S92.45 1 125.57 1m0-1C56.53 0 .57 55.96.57 125s55.96 125 125 125 125-55.96 125-125-55.96-125-125-125z" />
+            <path id="helpmark"
+                d="m109.23 162.5-.51-6.6c-1.52-13.7 3.05-28.68 15.73-43.91 11.42-13.45 17.76-23.35 17.76-34.77 0-12.94-8.12-21.57-24.11-21.83-9.14 0-19.29 3.05-25.63 7.87l-6.09-15.99c8.37-6.09 22.84-10.15 36.29-10.15 29.19 0 42.38 18.02 42.38 37.31 0 17.26-9.64 29.69-21.83 44.16-11.17 13.2-15.23 24.36-14.47 37.31l.25 6.6h-19.77zm-5.58 35.53c0-9.39 6.34-15.99 15.23-15.99 8.88 0 14.97 6.6 14.97 15.99 0 8.88-5.84 15.73-15.23 15.73-8.88 0-14.97-6.85-14.97-15.73z"
+                style="fill:#fff;stroke:#000;stroke-width:7;stroke-miterlimit:10" />
+        </svg>
+
+
+
+    </div>
+
+    <div class="bg">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1920 1080"
+            style="enable-background:new 0 0 1920 1080" xml:space="preserve">
+            <style>
+                .st0 {
+                    fill: #90b0b0
+                }
+            </style>
+            <circle id="c1" class="st0" cx="147" cy="160" r="80" />
+            <circle id="c2" class="st0" cx="212.5" cy="810.5" r="91.5" />
+            <circle id="c3" class="st0" cx="1291" cy="526" r="84" />
+            <circle id="c4" class="st0" cx="918" cy="216" r="94" />
+            <circle id="c5" class="st0" cx="942" cy="768" r="134" />
+            <circle id="c6" class="st0" cx="483.5" cy="511.5" r="133.5" />
+            <circle id="c7" class="st0" cx="1632.5" cy="737.5" r="55.5" />
+            <circle id="c8" class="st0" cx="1366.5" cy="895.5" r="56.5" />
+            <circle id="c9" class="st0" cx="1704" cy="221" r="95" />
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

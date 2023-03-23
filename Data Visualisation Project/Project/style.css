@@ -1,0 +1,455 @@
+body{
+    background-color: #b4d9d9;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#theme1, #theme2, #sources{
+    position: absolute;
+    font-size: large;
+    left: 100px;
+}
+
+#theme1{
+    top: 260px;
+}
+
+#theme2{
+    top: 390px;
+}
+
+#sources{
+    top: 520px;
+
+}
+
+
+.icons{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 250px;
+    left:15px;
+}
+
+#baricon{
+    padding-bottom: 50px;
+}
+
+#helpicon{
+    padding-top: 50px;
+}
+
+#mailicon{
+    transform-origin: center;
+    animation: shake 2s infinite;
+    animation-play-state: paused;
+
+}
+
+
+#iris1, #iris2, #iris3{
+    transform-origin: center;
+    stroke-dasharray: 200px;
+    animation: rotate 3s infinite;
+    animation-play-state: paused;
+}
+
+#iris1{
+    animation-delay: 300ms;
+    
+}
+#iris2{
+    animation-delay: 150ms;
+    
+}
+
+#iris3{
+    animation-delay: 1ms;
+}
+
+#bar1, #bar2, #bar3, #bar4,#bar1s, #bar2s, #bar3s, #bar4s{
+    transform-origin: bottom;
+    animation: barAnim 3s infinite;
+    animation-play-state: paused;
+}
+
+#bar2, #bar2s{
+    animation-delay: 50ms;
+}
+
+#bar3, #bar3s{
+    animation-delay: 250ms;
+}
+
+#bar4, #bar4s{
+    animation-delay: 150ms;
+}
+
+
+#helpmark{
+
+    animation: dashAnim 8s infinite;
+    animation-play-state: paused;
+}
+
+.animButton{
+    align-items: center;
+    background-image: radial-gradient(80% 100% at 90% 0, #06d98f 20%, #4062fc 100%);
+    border: 0;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    width: 100px;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: large;
+    top: 30px;
+    left: 120px;
+}
+
+#TempButton{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 650px;
+    left: 1350px;
+
+}
+
+#tempBar{
+    animation: tempIncrease 2s infinite;
+    animation-play-state: paused;
+    transform-origin: center;
+
+}
+
+#HungerButton{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 650px;
+    left: 1025px;
+
+}
+
+#globe{
+    animation: globeRotate 2s infinite;
+    animation-play-state: paused;
+    transform-origin: center;
+}
+
+.HungerChart , .TempChart,.EuroChart{
+    position: absolute;
+    width: 1100px;
+    left: 500px;
+    bottom: 200px;
+}
+
+.countrySizeChart,.EUCountryChart{
+    position: absolute;
+    width: 650px;
+    left: 750px;
+    bottom: 480px
+    
+    
+}
+
+.populationChart, .EUPopChart{
+    position: absolute;
+    width: 650px;
+    left: 750px;
+    bottom: 170px
+}
+
+#flag{
+    animation: flagAnim 5s infinite;
+    animation-play-state: paused;
+}
+
+
+#CountryPopButton{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 650px;
+    left: 700px;
+
+}
+
+#CountryPopButtonEU, #euroButton{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 650px;
+    left: 1030px;
+
+}
+
+#euro{
+    animation: euroAnim 5s infinite;
+    animation-play-state: paused;
+    transform-origin: center;
+
+}
+
+
+h1{
+    position: absolute;
+    bottom: 720px;
+    left:530px;
+}
+
+
+#HungerSourceTitle{
+    position: absolute;
+    bottom: 620px;
+    left:430px;
+}
+
+#HungerSources{
+    position: absolute;
+    bottom: 290px;
+    left: 430px;
+    font-size: 17px;
+}
+
+#CosmeticsSourceTitle{
+    position: absolute;
+    bottom: 620px;
+    left:1100px;
+}
+
+#CosmeticsSources{
+    position: absolute;
+    bottom: 360px;
+    left: 1100px;
+    font-size: 17px;
+}
+
+
+#ChartTitleCountryPop{
+    position: absolute;
+    bottom: 480px;
+    left:430px;
+
+}
+
+
+#c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9
+{
+    transform-origin: center;
+    animation: bgAnim 5s infinite;
+}
+
+#c2{
+    animation-delay: 300ms;
+}
+
+#c3{
+    animation-delay: 1800ms;
+}
+
+#c4{
+    animation-delay: 1600ms;
+}
+
+#c5{
+    animation-delay: 1200ms;
+}
+
+#c6{
+    animation-delay: 1000ms;
+}
+
+#c7{
+    animation-delay: 800ms;
+}
+
+#c8{
+    animation-delay: 1400ms;
+}
+
+#c9{
+    animation-delay: 600ms;
+}
+
+@keyframes bgAnim {
+    0%{
+        transform: scale(0);
+        fill-opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        fill-opacity: 1;
+    }
+}
+
+@keyframes dashAnim {
+    
+    0%{
+        stroke-dasharray: 0px;
+        stroke-dashoffset: 0px;
+    }
+
+    10%{
+        stroke-dasharray: 10px;
+    }
+
+    100%{
+        stroke-dashoffset: 100px;
+    }
+}
+
+
+@keyframes rotate{
+
+    0%{
+        transform: rotate(0deg);
+        fill-opacity: 0.8;
+        stroke-dashoffset: 0px;
+        stroke-width: 2.5px;
+    }
+
+    50%{
+        stroke-dashoffset: 200px;
+        stroke-width: 1px;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        fill-opacity: 1;
+        stroke-dashoffset: 0px;
+        stroke-width: 2.5px;
+    }
+
+}
+
+@keyframes barAnim {
+    0%{
+        transform: scaleY(1);
+    }
+
+    40%{
+        transform: scaleY(1.18);
+    }
+
+    80%{
+        transform: scaleY(0.5);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    20%{
+        transform: rotate(30deg);
+    }
+
+    30%{
+        transform: rotate(-30deg);
+    }
+
+    40%{
+        transform: rotate(20deg);
+    }
+    
+    50%{
+        transform: rotate(-20deg);
+    }
+
+    60%{
+        transform: rotate(10deg);
+    }
+
+    70%{
+        transform: rotate(-10deg);
+    }
+
+    80%{
+        transform: rotate(5deg);
+    }
+
+    90%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+
+  
+}
+
+@keyframes flagAnim {
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(70px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes globeRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes tempIncrease {
+    0%{
+        transform: scaleY(1);
+    }
+
+    50%{
+        transform: scaleY(2);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+
+@keyframes euroAnim {
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+
+    40%{
+        transform: scale(1.5);
+    }
+
+    80%{
+        transform: scale(0.5);
+    }
+    
+    100%{
+        transform: scale(1)  rotate(360deg);
+    }
+}
