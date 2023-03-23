@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title color="magenta">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                    MyRecipes
+                </ion-title>
+
+                <ion-buttons slot="end">
+                    <ion-button id="deleteAll" color="magenta">
+                        <ion-icon name="trash-outline" slot="start"></ion-icon>
+                        <ion-label>CLEAR</ion-label>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion padding">
+
+            <h6 id="whenEmpty">No recipes yet. Go on, add a new one!</h6>
+
+            <ion-card id="recipeContainer">
+
+            </ion-card>
+            <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+                <ion-fab-button color="magenta" class="nav-link" href="AddRecipes.html">
+                    <ion-icon name="add-outline"></ion-icon>
+                </ion-fab-button>
+            </ion-fab>
+        </ion-content>
+    </ion-app>
+
+    <script src="ShowRecipe.js"></script>
+
+    </style>
+    
+    <script type="module">
+        import { toastController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+        window.toastController = toastController;
+    </script>
+
+
+    <script>
+        const button = document.getElementById("deleteAll")
+        button.addEventListener('click', clearedMessage);
+
+        async function clearedMessage() {
+            const toast = await toastController.create({
+                color: 'dark',
+                duration: 2000,
+                message: 'all reciped were',
+                showCloseButton: true,
+            });
+
+            await toast.present();
+        }
+    </script>
+
+</body>
+
+</html>

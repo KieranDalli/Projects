@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title color="magenta">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                    MyRecipes
+                </ion-title>
+
+                <ion-buttons slot="end">
+                    <ion-button color="magenta" href="index.html">
+                        <ion-icon name="list-outline" slot="start"></ion-icon>
+                        <ion-label>Recipes</ion-label>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <h1>New Recipe</h1>
+            <ion-list>
+                <ion-item>
+                    <ion-label position="stacked">Recipe Name</ion-label>
+                    <ion-input id="recipe" placeholder="Chicken Tikka Masala"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="stacked">Ingredients</ion-label>
+                    <ion-textarea id="ingredients" placeholder="1 Onion"></ion-textarea>
+                </ion-item>
+            </ion-list>
+
+            <ion-button id="saveBtn" expand="full" color="magenta">
+                <ion-icon name="save-outline" slot="start"></ion-icon>
+                Save Recipe
+            </ion-button>
+
+
+        </ion-content>
+    </ion-app>
+
+    <script src="SaveRecipe.js"></script>
+
+</body>
+
+</html>
